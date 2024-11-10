@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xelf Designs</title>
+
+    <!-- link to fint awsome for icons ps not sure it'll work -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" defer></script>
+    <link rel="stylesheet" href="contact.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- For Icons -->
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <!-- Logo -->
+            <a href="index.html" class="clickable-container">
+              <div class="logo">
+                  <img src="my-logo.png" alt="Xelf Designs Logo">
+              </div>
+            </a>
+
+            <!-- Navigation Menu -->
+<nav class="nav-menu">
+  <ul class="menu-list">
+      <li class="menu-item">
+          <a href="index.html">Home</a>
+      </li>
+      <li class="menu-item dropdown">
+          <a href="about.html">About Us <i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown-content">
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="about.html">Xelf Designs</a></li>
+          </ul>
+      </li>
+      <li class="menu-item">
+          <a href="team.html">Team</a>
+      </li>
+      <li class="menu-item">
+        <a href="price.html">Pricinig</a>
+      </li>
+      <li class="menu-item dropdown">
+          <a href="contact.html" class="contact-btn">Contact <i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown-content">
+              <li><a href="contact.html">Contact Form</a></li>
+              <li><a href="locations.html">Our Locations</a></li>
+          </ul>
+      </li>
+  </ul>
+</nav>
+        </div>
+    </header>
+
+
+     <!-- Contact Us Section -->
+  <section id="contact" class="contacts-section">
+    <h3>Contact Us</h3>
+    <h4>We’d love to hear from you! Whether you’re looking to start a new project, need a design consultation, or just want to learn more about our services, our team at Xelf Designs is here to help. Feel free to reach out using the form below or via any of the provided contact details. Let’s bring your ideas to life together!</h4>
+    <h3>Get in Touch</h3>
+    <h4>- Email: xelfdesigns@gmail.com</h4>
+    <h4>- Phone: +123-456-7890</h4>
+    <h4>- Location: 123 Creative Ave, Design City, Country</h4>
+    <h3>Business Hours</h3>
+    <h4>- Monday – Friday: 9:00 AM – 6:00 PM</h4>
+    <h4>- Saturday: 10:00 AM – 4:00 PM</h4>
+    <h4>- Sunday: 10:00 AM – 4:00 PM</h4>
+    <h3>Connect with Us</h3>
+    <h4>Stay updated with our latest projects, design tips, and news by following us on social media:</h4>
+    <h4>- Instagram: @XelfDesigns</h4>
+    <h4>- Twitter: @XelfDesigns</h4>
+    <h4>- LinkedIn: Xelf Designs</h4>
+    <h3>Have a project in mind?</h3>
+    <h5>We’re excited to collaborate and bring your vision to life. Fill out the form below, and we’ll get back to you as soon as possible!</h5>
+    <form id="contactForm">
+      <input type="text" id="name" name="name" placeholder="Your Name">
+      <input type="email" id="email" name="email" placeholder="Your Email">
+      <textarea id="message" name="message" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    
+    <script>
+      document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent default form submission
+    
+        // Get form data
+        const formData = {
+          name: document.getElementById('name').value,
+          email: document.getElementById('email').value,
+          message: document.getElementById('message').value
+        };
+    
+        // Log form data to console
+        console.log('Form Data:', formData);
+    
+        // Redirect to thank you page
+        window.location.href = "/sent.html";
+      });
+    </script>
+    
+  </section>  
+
+    
+
+             <!-- Footer Section -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2024 Xelf Designs. All rights reserved.</p>
+      <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="team.html">Team</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact Us</a>
+      </nav>
+    </div>
+</footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
